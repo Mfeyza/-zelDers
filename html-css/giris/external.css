@@ -1,0 +1,65 @@
+#external{
+    color: rgb(153, 20, 20);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#external:hover{
+ color: darkgoldenrod;
+ background-color: black;
+}
+#kus1{
+    border-radius: 20px;
+    cursor: zoom-in;
+}
+#kus1:hover{
+    border-radius: 60px;
+    opacity: 0.5;
+}
+
+.container{
+  border: 5px solid red;
+  background-color: bisque;
+
+}
+h1{
+    background-color: crimson;
+    margin-top:500px;
+}
+#par1{
+    background-color: olive;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+#par2{
+    background-color: blue;
+    font-weight: 900;
+    padding: 50px;
+}
+.padding{
+    background-color: lightcoral;
+    padding: 50px;
+}
+.div1{
+    background-color: burlywood;
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+    margin-top: 50px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/13/22/25/bird-1905255_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.div2{
+    width: 100px;
+    height: 200px;
+    background-color: fuchsia;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 20px;
+}
