@@ -1,0 +1,57 @@
+/*! Kombinatorler, stil uygulamak için HTML'deki elementler arasındaki bağlantıları taımlamanın yoludur. */
+
+.container div p {
+    background-color: rgb(59, 59, 136);
+}
+
+p + div { /*! p den hemen sonra gelen div */
+background-color: aqua;
+}
+div + p {
+    background-color: blueviolet;
+}
+
+.container + p{
+    background-color: brown;
+}
+
+h2[title="baslik2"]{
+    color: burlywood;
+}
+
+p[title="paragraf1"]{
+    font-size: 20px;
+}
+ a[target="_blank"]{
+    background-color: gray;
+    font-size: 1.5rem;
+ }
+
+.out{
+    border: 2px solid red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    margin: auto; 
+} 
+.out:hover{
+    outline: 5px dashed rgb(0, 128, 21);
+    cursor: pointer;
+    outline-offset: 2rem;
+}
+.youtube{
+    border: 5 px solid red;
+    width: 20rem;
+    margin: 50px auto;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 10px outset rgb(177, 33, 177) ;
+    outline-offset: 1rem;
+    background-color: chocolate;
+  
+}
