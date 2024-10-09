@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(158, 179, 172);
+}
+.container{
+    margin:45px  auto;
+    width: 80%;
+    background-color: azure;
+    border-radius:20px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 5px 50px black ;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.logo{
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px red;
+    margin: 1rem;
+}
+select{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(135, 135, 190);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.container-header{
+    margin-top: 15px;
+}
+.search{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content:space-between;
+    border-radius: 5px;
+}
+.search input{
+    border:none;
+    background-color: #F2F2F2;
+    outline: none;
+}
+/* .search img{
+width: 30px;
+height: 30px;
+margin: 1rem;
+} */
+ .support{
+    font-size: 1.5rem;
+    text-align: right;
+    margin-left: 6rem;
+ }
+ .number{
+ font-weight: 600;
+ }
+ .support-text{
+    font-size: 0.9rem;
+ }
+ .icons{
+    padding: 10px;
+ }
+ .main{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+    
+ }
+.main-image{
+    text-align: center;
+}
+ .categorySection{
+    background-color: bisque;
+  
+ }
+ .category-text{
+    text-align: center;
+    font-size: 2rem;
+  padding: 2rem;
+
+ }
+ .categorySection img{
+    width: 150px;
+    height: 150px;
+ }
+ .categories{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ }
+
+ .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: brown;
+    padding: 2rem;
+ }
+ .expert{
+    flex: 1;
+    padding: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .lookForExpert{
+    font-size: 2rem;
+    line-height: 1.5;
+ }
+ span{
+    color: cadetblue;
+ }
+ .leaveInfo{
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .formSection{
+    font-size: 1.5rem;
+ }
+ .formSection input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+ }
+ button{
+    height: 40px;
+    width: 15rem;
+    background-color: blanchedalmond;
+    border: none;
+    font-size: 20px;
+
+ }
+ .formElement{
+    margin: 1.5rem 1rem;
+ }
+
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  
+ }
+ .footer a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+ }
