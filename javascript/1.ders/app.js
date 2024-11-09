@@ -115,3 +115,5 @@ console.log(sayi1 ,  sayi2)  //? --> global sayi1 ve sayi2 yi yazdirir
 
 //! gelmeden önce mantıksal operatör ve condition bakabilirsin.
 // https://medium.com/@mrymfyza/javascript-mfy-serisi-conditions-ko%C5%9Ful-ifadeleri-if-else-ternary-d5dcd21480f4
+
+

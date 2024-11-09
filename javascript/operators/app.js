@@ -30,12 +30,12 @@ console.log("operatörler")
 
 
 //!toFixed
-const r=Number(prompt("Lütfen yarıçapı giriniz"))
-console.log(typeof r)
-console.log(typeof Math.PI)
-const alan=(Math.PI * r ** 2).toFixed(2)
-console.log(alan)
-console.log(typeof alan)
+// const r=Number(prompt("Lütfen yarıçapı giriniz"))
+// console.log(typeof r)
+// console.log(typeof Math.PI)
+// const alan=(Math.PI * r ** 2).toFixed(2)
+// console.log(alan)
+// console.log(typeof alan)
 
 //!Yuvarlama fonksiyonları
 console.log(Math.round(153.6555)) //!yakın tam sayıya yuvarlar(154)
@@ -66,4 +66,60 @@ console.log(num1)
 const num2=3 % 2 //! mod alır
 console.log(num2)
 
-//? Kullanıcıdan prompt ile 3 basamaklı sayi al ve sayının basamak değerlerini ayrı ayrı yazdır örneğin birler=3 onlar=4 yüzler = 9 gibi
+//?  3 basamaklı sayi al ve sayının basamak değerlerini ayrı ayrı yazdır örneğin birler=3 onlar=4 yüzler = 9 gibi
+const number3=865
+const birler= number3 % 10
+console.log(birler)
+const onlar=Math.floor(number3/10) %10
+console.log(onlar)
+const yüzler= Math.trunc(number3/100) 
+console.log(yüzler)
+
+// * ================================================
+// *          KARSILASTIRMA OPERATORLERI
+// * ================================================
+
+console.log(5 == 5)
+console.log(5 =="5") //!type eşitliğini kontrol etmez
+console.log(5 === "5") //! type eşitliğine de bakar katı eşitlik gerek.
+console.log(4 != 5) //! bu ifade eşit değil demektir.
+console.log(4 != "4") //! type eşitliğini kontrol etmez
+console.log(4 !=="4") //!type eşitliğini kontrol eder.
+console.log(4 > 5) 
+console.log(5 >= 5)
+console.log(4 <= 5)
+
+// * ================================================
+// *            MANTIKSAL OPERATORLER
+// * ================================================
+//! birden fazla koşulu birleştirmek istediğimiz zaman ya da koşulllar arasında mantıksal ilşki kurmak istediğimiz zaman kullanılır.
+
+const m1=true
+const m2=false
+console.log(m1 && m2) //! her zaman flasecarar false varsa gördüğü an direkt false döndürür.
+console.log(m1 || m2 || false || false) //! her zaman true arar bir tane true olması yeterlidir.
+console.log(!m2)
+
+const yas=27
+const cinsiyet = "kadın"
+console.log(yas >= 18 && (cinsiyet === "kadın" || cinsiyet ==="k"))  
+
+//? javascript için her zaman false olan 6 deger vardır
+const nal= null
+const tanımsız= undefined
+const bos = ""
+const sayidegil= NaN
+const sifir=0
+const falsy=false
+
+//! boolean ifade demek false ya da true demektir.
+console.log(Boolean(0))
+console.log(Boolean(undefined))
+console.log(Boolean(""))
+
+let number5= "123456789"
+let number6=""
+let tc=Number(number5)
+console.log(Boolean(number5))
+let string=123
+console.log(String(string))
