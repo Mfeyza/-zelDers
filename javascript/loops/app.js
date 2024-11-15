@@ -7,7 +7,7 @@ console.log("loops")
 
 //! TEMEL DÖNGÜLER
 
-//? FOR
+//? FOR DÖNGÜSÜ
 
 //*for(başlangıç,koşul,sayaç güncelleme){
 //*Tekrarlı güncellenecek kod bloğu}
@@ -81,3 +81,93 @@ for(let i =n; i>=1; i--){ //*i başlangıçta 6 her adımda 1 azalcak
     toplam += i % 10
  }
  console.log(toplam)
+
+
+ //?WHİLE DÖNGÜSÜ
+
+ //* While döngüsü , koşul doğru olduğu sürece devam eder
+ //!while(koşul){}
+
+//  let i = 0;
+//  while(i<10){
+//     console.log("tuba")
+//     i++;
+//  }
+
+ //!For Döngüsü ile While Döngüsü Arasındaki Farklar
+
+//? for döngüsü ve while döngüsü, her ikisi de tekrar eden işlemleri gerçekleştirmek için kullanılır, ancak aralarında bazı farklar vardır:
+
+//?for döngüsü, genellikle belirli bir sayı kadar tekrar edilmesi gereken işlemler için kullanılır. Başlangıç değeri, koşul ve sayaç güncellemesi bir arada tanımlanır.
+//? while döngüsü, belirli bir koşul doğru olduğu sürece çalışmaya devam eder ve başlangıç değeri ile sayaç güncellemesi döngü dışında tanımlanır.
+//? for döngüsü, sayaç güncellemesi ve koşul kontrolü bir arada olduğundan okunması ve anlaşılması genellikle daha kolaydır.
+//! while döngüsü, koşul kontrolünü daha esnek yapar ve döngü içinde herhangi bir noktada koşul kontrolü yapılabilir. ÖNEMLİ
+
+//! 10 dan 1 e kadar geriye doğru sayan while döngüsü
+let j=10;
+while(j >1){
+    console.log(j)
+    j--;
+}
+
+//?Do.. While döngüsü
+
+//! while döngüsünde döngü bloklarının en az 1 kez çalıştırılması için while koşulunun true getirmesi gerekir ancak do while döngüsünde koşul false da olsa 1 kez çalışır.
+
+// do{
+//        }while{koşul}
+
+let t = 6 ;
+do {
+ console.log("object")
+ t++;
+}while(t<5)
+
+//? Do…While Döngüsü ile While Döngüsü Arasındaki Farklar
+//? Çalıştırma Sırası:
+//*while döngüsünde, koşul kontrol edilmeden kod bloğu çalıştırılmaz.
+//*do...while döngüsünde, koşul kontrol edilmeden kod bloğu en az bir kez çalıştırılır.
+//?Kullanım Senaryoları:
+//*while döngüsü, belirli bir koşulun sağlandığı sürece tekrarlanan işlemler için kullanılır.
+//*do...while döngüsü, kod bloğunun en az bir kez çalışması gerektiğinde kullanılır.
+
+//? BREAK VE CONTİNUE İFADELERİ
+//!Break ifadesi döngüyü hemen sonlandırmak için kullanılır. Belirli bir koşul sağlatıp döngüyü bitirmek istediğin zaman kullanırsın.
+
+// let ogrenciler= ["Rabia", "Mustafa","Hüseyin","Furkan","Tuba"];
+// let i = 0;
+
+// do {
+//     if(ogrenciler[i]==="Hüseyin"){
+//         console.log("Hüseyin bulundu");
+//         break;
+//     }
+//     console.log(ogrenciler[i]);
+//     i++;
+// }while(i<ogrenciler.length)
+
+// //! Continue ifadesi döngünün mevcut adımını atlar ve sonraki adıma geçer
+
+let ögrenciler= ["Rabia", "Mustafa","Hüseyin","Furkan","Tuba"];
+let p = 0;
+
+do {
+    if(ögrenciler[p]==="Hüseyin"){
+       p++;
+       continue;
+    
+    }
+    console.log(ögrenciler[p]);
+    p++;
+}while(p < ögrenciler.length)
+
+    //? Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
+//? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
+//? not girmeye zorlayan kodu while dongusu ile yaziniz.
+
+let not = +prompt("lütfen notunuzu giriniz")
+while(not<0 || not > 100){
+    console.log("Not 0 ile 100 arasında olmalıdır")
+    not=+prompt("yeniden giriniz")
+}
+console.log(not)
